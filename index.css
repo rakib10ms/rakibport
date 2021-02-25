@@ -346,8 +346,8 @@ body{
 
  
   .client-feedback{
-   min-height: 70vh;
-    width: auto;
+   min-height: 350px;
+    width: 100%;
     background-color:white;
     padding:  2rem 1rem;
     text-align: center;
@@ -434,6 +434,10 @@ color:white;
      display: grid;
      grid-template-columns: 1fr;
      justify-items: center;
+   }
+   .client-feedback{
+     padding:10px 15px;
+     line-height:1.7;
    }
 
 }
