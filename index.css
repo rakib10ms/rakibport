@@ -169,6 +169,9 @@ body{
     margin: 0 auto;
 
   }
+  .my-name{
+    font-size: 1.8rem;
+  }
 
 }
 
