@@ -147,6 +147,14 @@ body{
   height: 80%;
   object-fit: cover;
   margin-top: 1rem;
+  filter: grayscale(100%);
+  transition: transform 0.1s ease;
+ 
+}
+
+.image-content img:hover{
+   transform: scale(0.98);
+  filter: grayscale(10%);
  
 }
 
@@ -160,8 +168,8 @@ body{
   }
   .image-content img{
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
   }
   .image-content{
     margin: 0 auto;
@@ -270,7 +278,7 @@ body{
     left: 0;
      width: 100%;
      height: 100%;
-     background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
   }
   .image-overlay-content{
     color: white;
@@ -279,9 +287,14 @@ body{
     opacity: 0;
       transition: all 0.2s;
   }
+  .image-overlay-content i{
+    font-size: 40px;
+    color:white;
+    margin: 10px;
+  }
   .project:hover .image-overlay-content{
     opacity: 1;
-    transform: translateY(50%);
+    transform: translateY(30%);
   }
 
  
