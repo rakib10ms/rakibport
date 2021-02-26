@@ -273,8 +273,7 @@ body{
     position: relative;
   }
   .recent-work-image-overlay{
-     right: 0;
-     bottom: 0;
+   
     position: absolute;
     top:0;
     left: 0;
@@ -289,7 +288,7 @@ body{
     opacity: 0;
       transition: all 0.2s;
       box-sizing: border-box;
-      padding: 5px;
+      padding: 8px;
   }
   .image-overlay-content i{
     font-size: 40px;
@@ -320,7 +319,6 @@ body{
      font-size: 2.1rem;
      font-weight: 600;
      letter-spacing: 1px;
-     padding: 1rem;
      
 
   }
