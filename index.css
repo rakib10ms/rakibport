@@ -101,15 +101,15 @@ body{
 
 
 .custom-alert{
-  width: 100px;
   margin: 0 auto;
-  display: inline-block;
+  
 }
 .close{
   font-weight: bold;
-  padding:7px 15px;
-  border:1px solid grey;
+  padding:5px 16px;
+  border-outline:none;
   color: red;
+  border-radius: 8%;
   
 }
 
