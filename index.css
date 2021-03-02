@@ -30,7 +30,7 @@
 
 
   .target-span{
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -43,11 +43,11 @@
   position: absolute;
   background-color:orange;
   height: 6px;
-  width: 80px;
+  width: 70px;
   display: block;
-  left: 40%;
-  transform: translateX(-40%);
-  bottom: 0px;
+  left: 30%;
+  transform: translateX(-30%);
+  bottom: -3px;
   
 }
   
@@ -84,12 +84,13 @@ body{
 
 
 
-  .custom{
-    background-color:darkblue;
-  }
+  /* .custom{
+    background-color:#C5AA6A
+
+  } */
 
   .custom .nav-link {
-  margin: 10px 20px;
+  margin: 10px 2rem;
   }
 
 }
@@ -127,8 +128,8 @@ body{
     cursor: pointer;
   }
   .intro-content button:hover{
-    background-color: black;
-    color: white;
+    background-color: darkblue;
+    
     transition: all 0.1s ease-in;
   }
 
@@ -155,6 +156,7 @@ body{
 .intro-content{
   align-self: center;
 }
+
 .my-name{
   font-size: 2.5rem;
   font-weight: bold;
@@ -202,11 +204,7 @@ body{
 }
 
 .about{
-  background: #005AA7;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: black;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px 7px  rgba(0,0,0,0.1);
   padding: 8px 15px ;
   min-height: 400px;
   display: grid;
