@@ -84,6 +84,7 @@ body{
 
   .custom .nav-link {
   margin: 10px 2rem;
+  opacity: 0.8;
   }
 
 }
@@ -138,7 +139,6 @@ body{
     display: grid;
     grid-template-columns: 300px auto;
     grid-gap:1rem;
-   background-color:white;
     padding: 1rem;
 
   }
@@ -223,7 +223,7 @@ body{
   flex-basis: 300px;
 }
 .service-icon i{
-  border-radius: 50%;
+  border-radius: 10%;
 }
 
 
