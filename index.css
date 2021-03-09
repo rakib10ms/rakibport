@@ -10,8 +10,7 @@
     box-sizing: border-box;
   }
   body{
-    background-color: #f1f1f1;
-    
+     background-color: #34495e;
   }
 
   
@@ -70,6 +69,7 @@
 body{
   font-size:15px;
   line-height: 1.8;
+  background-color: darkblue;
 }
   img{
     max-width: 300px;
@@ -80,7 +80,9 @@ body{
   }
 
 
-
+.custom{
+  background-color: #16a085;
+}
 
   .custom .nav-link {
   margin: 10px 2rem;
@@ -416,8 +418,9 @@ body{
 
 .carousel-item{
   padding: 2rem 1.5rem;
-  background-color:#34495e;
-  color: #ffff;
+  background-color:#ecf0f1;
+  
+
   padding: 1rem 0.5rem;
 
 }

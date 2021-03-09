@@ -26,23 +26,8 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.counter').counterUp({
-    delay: 10,
-    time: 1500
-});
-
-    })
-
-
-    $(document).ready(function(){
-
-    $('.custom-alert').click(function(){
-     $(this).fadeOut(800);
-     console.log('clicked')
-   })
-    })
+    <script src="index.js">
+   
     
 
    
@@ -56,9 +41,9 @@
  
  
      
-    <nav class="navbar navbar-expand-lg navbar-dark  bg-success custom fixed-top p-0 ">
+    <nav class="navbar navbar-expand-lg navbar-dark   custom fixed-top p-0 ">
       <div class="container-fluid">
-        <a class="navbar-brand " href="#"><span class="" style="font-style:italic;font-weight: bold; letter-spacing: 2px; font-size: 2rem;">RAKIB PRO</span></a>
+        <a class="navbar-brand " href="#"><span class="" style="font-style:italic;font-weight: bold; letter-spacing: 2px; font-size: 2rem;">RAKIB</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon ">
           </span>
@@ -221,7 +206,7 @@
 
    <section class="my-recent-work" id="project" data-aos="fade-up">
     
-    <span class="target-span">MY PROJECTS</span>
+    <span class="target-span text-white">MY PROJECTS</span>
 
     <div class="my-recent-work-wrapper bg-light">
 
@@ -393,7 +378,7 @@
 
 
 
-   <section class="client-feedback">
+   <section class="client-feedback" data-aos="fade-up">
 
   <span class="target-span">CLIENT REVIEWS</span>
 
@@ -442,18 +427,18 @@
         </div>    
         </div>
 
-        <div class="carousel-item">
+         <div class="carousel-item">
 
 
           <div class="first person ">
             <div class="image-person">
               <img src="images/office-person1.jpg"/>
             </div>
-            <h2>Kahafi Reo</h2>
+            <h2 class="text-warning">Kahafi Rayhan</h2>
             <p class="quotes">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam aspernatur explicabo laboriosam magnam facilis rerum neque accusamus, obcaecati corporis, nobis inventore dolores accusantium vero aliquam, ab veniam! Minima, velit autem"</p>
           </div>    
-          </div>
-
+          </div> 
+ 
 
 
 
@@ -500,9 +485,9 @@
   </div>
 
 
-  <div class="contact container">
+  <div class="contact container" data-aos="zoom-in-right">
     <span class="target-span">Get In Touch</span>
-    <form action="POST" data-netlifly="true"id="contact">
+    <form action="" id="contact" >
       <label for="fname">Your Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
   
@@ -513,7 +498,7 @@
       <label for="subject">Your Message</label>
       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
   
-      <input type="submit" value="Submit">
+      <input type="submit" id='form-button'value="Submit">
     </form>
   </div>
 
