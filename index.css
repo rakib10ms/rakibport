@@ -9,11 +9,10 @@
   *:before, *:after {
     box-sizing: border-box;
   }
-  body{
-     background-color: #34495e;
-  }
 
-  
+body{
+  background-color:whitesmoke;
+}  
  body::-webkit-scrollbar {
     width: 8px;
   }
@@ -69,7 +68,6 @@
 body{
   font-size:15px;
   line-height: 1.8;
-  background-color: darkblue;
 }
   img{
     max-width: 300px;
@@ -80,9 +78,6 @@ body{
   }
 
 
-.custom{
-  background-color: #16a085;
-}
 
   .custom .nav-link {
   margin: 10px 2rem;
