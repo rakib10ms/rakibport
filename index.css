@@ -25,12 +25,55 @@
   }
   body{
     background-color: #f1f1f1;
+  
   }
 
    
 
   .custom{
     background-color:rgba(0,0,0,0.9);
+  }
+
+  .particle-cont{
+    padding: 0;
+    overflow: hidden;
+ 
+  }
+
+  .wraps{
+   width: 100vw;
+   height: 90vh;
+
+
+  }
+  #particles-js{
+    width: 100%;
+    height: 100%;
+    background-image: url(images/my-work4.jpg);
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+ 
+
+  } 
+  #particles-js h1{
+padding-top: 20rem;
+   color: white;
+  
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    .wraps{
+      width: 100vw;
+      height: 60vh;
+  
+     }
+     #particles-js h1{
+      padding-top: 15rem;
+         color: white;
+        }
+
   }
 
 
