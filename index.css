@@ -12,7 +12,7 @@
 
 
 
- body::-webkit-scrollbar {
+ /* body::-webkit-scrollbar {
     width: 8px;
   }
   body::-webkit-scrollbar-track {
@@ -22,10 +22,10 @@
     box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
     background-color: goldenrod;
 
-  }
+  } */
   body{
     background-color: #f1f1f1;
-    overflow: hidden;
+    overflow-x: hidden;
   
   }
 
@@ -37,7 +37,6 @@
 
   .particle-cont{
     padding: 0;
-    overflow: hidden;
  
   }
 
@@ -89,7 +88,7 @@ padding-top: 20rem;
 
 
   .target-span{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: bold;
     text-align: center;
     position: relative;
@@ -129,9 +128,9 @@ body{
   }
 
   .custom .nav-link {
-  margin: 10px 2rem;
-   font-weight:bold;
-   padding: 10px;
+  margin: 8px 1rem;
+   /* font-weight:bold; */
+   padding: 6px;
   
   }
 
@@ -179,7 +178,7 @@ body{
 }
 
 .my-name{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   letter-spacing: 1px;
   color:darkblue;
@@ -201,7 +200,7 @@ body{
  
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
   .intro {
     display: grid;
     grid-template-columns:1fr;
