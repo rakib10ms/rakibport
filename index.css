@@ -25,6 +25,7 @@
   }
   body{
     background-color: #f1f1f1;
+    overflow: hidden;
   
   }
 
@@ -126,8 +127,6 @@ body{
  
 
   }
-
-
 
   .custom .nav-link {
   margin: 10px 2rem;
