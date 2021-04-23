@@ -4,32 +4,29 @@
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     font-size: 17px;
+    box-sizing: border-box;
+
+
     
   },
-  *:before, *:after {
+ *:before, *:after {
     box-sizing: border-box;
   }
 
   body{
     background-color: #f1f1f1;
     overflow-x: hidden;
-    padding: 0;
+ 
   
   }
 
-  .wrapser{
-    overflow-x: hidden;
-  }
-   
+
 
   .custom{
     background-color:rgba(0,0,0,0.9);
   }
 
-  .particle-cont{
-    padding: 0;
- 
-  }
+
 
   .load{
     border: 1px solid #ECF0F1;
@@ -131,7 +128,7 @@
 
     .wraps{
       width: 100vw;
-      height: 90vh;
+      height: 80vh;
   
      }
      #particles-js h1{

@@ -57,6 +57,7 @@
       </button>
     </div> -->
 
+
     <div class="load">
       <hr/><hr/><hr/><hr/>
     </div>
@@ -66,7 +67,7 @@
      <div class="arrow-top"> <i class="fas fa-arrow-up"></i></div>
 
 
-  <div class="wrapser">
+
     <div class="container-fluid particle-cont" >
       
 
@@ -97,13 +98,14 @@
         </div>
       
       </section>
+      </div>
 
 
 
 
 
 
-
+      <div class="container">
       <section class="about bg-white" id="about ">
 
         <span class="target-span">
@@ -122,10 +124,10 @@
 
       </section>
 
+     </div>
 
 
-
-    
+    <div class="container">
        <section class="service-section bg-dark text-light p-4 mt-2" id="services">
          <span class="target-span ">SERVICES</span>
 
@@ -202,11 +204,11 @@
 
      </div>
     </section> 
+  </div>
 
 
 
-
-
+<div class="container">
    <section class="my-recent-work" id="project">
     
     <span class="target-span text-dark ">MY PROJECTS</span>
@@ -393,13 +395,14 @@
     </div>
 
    </section>
+  </div>
 
 
 
 
 
 
-
+   <div class="container">
 
    <section class="client-feedback bg-light" >
 
@@ -476,6 +479,7 @@
     </button>
   </div>
  </section>
+</div>
 
 
 
@@ -485,10 +489,9 @@
 
 
 
-
- <h2 class=" text-center p-3">TOTAL WORKING DAYS</h2>
 
  <div class="container bg-white ">
+  <h2 class=" text-center p-3 border-bottom">TOTAL WORKING DAYS</h2>
 
   <div class="row">
     <div class="col-md-4 " >
@@ -540,13 +543,11 @@
 </div>
 
 
-
-<footer class="p-5 bg-dark">
+<div class="container-fluid">
+<footer class="p-3 bg-dark">
  <div class="left-content d-flex">
-        <a>home</a>
-        <a>about</a>
-        <a>site</a>
-        <a>copyright</a>
+        <a>copyright2020@rakibpro</a>
+        
 
     </div>
     <div class="right-content d-flex justify-content-evenly">
@@ -559,7 +560,7 @@
     </div>
    
     </footer>
-    </div>
+  </div>
    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
 
@@ -586,10 +587,24 @@
 
 <script type="text/javascript">
 const arrowButton=document.querySelector(".arrow-top");
-console.log(arrowButton)
+// console.log(arrowButton);
 window.addEventListener('scroll',trigger);
+arrowButton.addEventListener('click',scrolldoTop);
 
 
+
+
+//button working code//
+function scrolldoTop(e){
+        let get=window.scrollTo(0,0);
+        return get;
+           
+    }
+
+
+
+
+//button show and hide code//
 function trigger(){
    if(this.scrollY>100){
      arrowButton.classList.add("active");
@@ -601,8 +616,6 @@ function trigger(){
 }
 
 </script>
-
-  
   
   </body>
 </html>
