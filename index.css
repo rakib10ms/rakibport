@@ -17,6 +17,9 @@
   
   }
 
+  .wraps{
+    overflow-x: hidden;
+  }
    
 
   .custom{
@@ -563,11 +566,11 @@ body{
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 576px) {
   .col-md-4 {
     border-right: 0px dashed black;
     border-bottom: 1px dashed black;
-    width: 50%;
+    width: 100%;
     margin: auto auto;
   }
   
