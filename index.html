@@ -57,9 +57,13 @@
       </button>
     </div> -->
 
-        <div id="preloader">
-       <img src="./images/preeloader.gif"/>
-     </div>
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+
+
+    
+     <div class="arrow-top"> <i class="fas fa-arrow-up"></i></div>
 
 
   
@@ -567,15 +571,35 @@
    <script src="./jquery/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  AOS.init({
-    offset:100,
-    duration:700
-  });
 
-  </script>
     <script src="preloader.js"> </script>
   <script src="gallery.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      offset:100,
+      duration:700
+    });
+  
+    </script>
+
+
+<script type="text/javascript">
+const arrowButton=document.querySelector(".arrow-top");
+console.log(arrowButton)
+window.addEventListener('scroll',trigger);
+
+
+function trigger(){
+   if(this.scrollY>100){
+     arrowButton.classList.add("active");
+  }
+  else{
+    arrowButton.classList.remove("active");
+
+  }
+}
+
+</script>
 
   
   

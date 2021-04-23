@@ -1,4 +1,4 @@
-const preloader=document.querySelector("#preloader");
+const preloader=document.querySelector(".load");
 
 
 window.addEventListener("load",loader)

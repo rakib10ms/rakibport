@@ -10,12 +10,10 @@
     box-sizing: border-box;
   }
 
-
-
-
   body{
     background-color: #f1f1f1;
     overflow-x: hidden;
+    padding: 0;
   
   }
 
@@ -30,6 +28,68 @@
  
   }
 
+  .load{
+    border: 1px solid #ECF0F1;
+    padding: 5px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+    transform:translate(-50%, -50%) rotate(135deg);
+    /*change these sizes to fit into your project*/
+    width:50px;
+    height:50px;
+    
+  }
+  .load hr{
+    border:0;
+    margin:0;
+    width:40%;
+    height:40%;
+    position:absolute;
+    border-radius:50%;
+    animation:spin 2s ease infinite;
+    z-index: 10000;
+  }
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translateX(200%)}
+    25%{transform:translateY(200%)}
+    50%{transform:translateX(0)}
+    75%{transform:translateY(0)}
+  }
+
+
+
+
+  .arrow-top {
+    position: fixed;
+    right: 10px;
+    bottom: 0px;
+    height: 33px;
+    width: 33px;
+    background-color:burlywood;
+    border:1px solid grey;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  
+}
+.arrow-top.active{
+  bottom: 10px;
+   opacity: 1;
+  transition: all 0.3s ease-in-out;
+
+}
   .wraps{
    width: 100vw;
    height: 100vh;
@@ -110,12 +170,13 @@
 body{
   font-size:15px;
   line-height: 1.8;
+  overflow-x: hidden;
 }
   img{
     max-width: 300px;
     height: auto;
   }
- 
+    
 
   }
 
