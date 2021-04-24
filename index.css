@@ -15,7 +15,6 @@
 
   body{
     background-color: #f1f1f1;
-    overflow-x: hidden;
  
   
   }
@@ -332,7 +331,7 @@ body{
    margin: 0 auto;
 
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 
    .about{
   
@@ -342,12 +341,12 @@ body{
      padding: 8px 12px;
    }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 
   *{
   
- font-size: 16px;  
- line-height: 1.7;
+ font-size: 15px;  
+ line-height: 1.8;
 }
 }
 
@@ -447,10 +446,12 @@ body{
   .all-items{
     display: none;
   }
+  .my-recent-work{
 
+    justify-content: center;
 
   }
-
+  }
 
 
 
