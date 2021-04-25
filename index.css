@@ -5,8 +5,6 @@
     line-height: 1.7;
     font-size: 17px;
     box-sizing: border-box;
-
-
     
   },
  *:before, *:after {
@@ -15,18 +13,7 @@
 
   body{
     background-color: #f1f1f1;
- 
-  
   }
-
-  .container{
-    overflow-x: hidden;
-  }
-
-  .custom{
-    background-color:rgba(0,0,0,0.9);
-  }
-
 
 
   .load{
@@ -91,12 +78,12 @@
   transition: all 0.3s ease-in-out;
 
 }
-  .wraps{
-   width: 100vw;
-   height: 100vh;
+.target-span{
+  font-size: 2rem;
+  font-weight: bold;
+     
+}
 
-
-  }
   #preloader{
     width: 100vw;
     height: 100vh;
@@ -108,181 +95,33 @@
     object-fit: cover;
   }
 
-  #particles-js{
-    width: 100%;
-    height: 100%;
-    background-image: url(images/my-work4-min.jpg);
-    background-size: cover;
-    text-align: center;
-    background-repeat: no-repeat;
- 
 
-  } 
-  #particles-js h1{
-   color: white;
-   transform: translateY(400px);
-
-  
-  }
-
-  @media only screen and (max-width: 768px) {
-
-    .wraps{
-      width: 100vw;
-      height: 80vh;
-  
-     }
-     #particles-js h1{
-       transform: translateY(400px);
-         color: white;
-        }
-
-  }
-
-
-  .target-span{
-    font-size: 1.7rem;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    margin-bottom: 1rem;
-    display: inline-block;
-   
-  }
-.target-span::after{
-  content: '';
-  position: absolute;
-  background-color:orange;
-  height: 6px;
-  width: 50px;
-  display: block;
-  left: 10%;
-  transform: translateX(-10%);
-  bottom: -3px;
-  
+.image-content{
+  width: 350px;
 }
-
-
-
-
-  @media only screen and (max-width: 576px) {
-
-
-body{
-  font-size:14px;
-  line-height: 1.8;
-  overflow-x: hidden;
-}
-  img{
-    width: 300px;
-    max-width: 300px;
-    height: auto;
-  }
-    
-
-  }
-
-  .custom .nav-link {
-  margin: 8px 1rem;
-   /* font-weight:bold; */
-   padding: 6px;
-  
-  }
-
-
-
-  .intro-content h1,h2,h3,p,span,button{
-    margin:7px;
-  }
-  .intro-content button{
-    outline: none;
-    border: none;
-    padding: 12px 17px;
-    cursor: pointer;
-  }
-  .intro-content button:hover{
-    background-color: black;
-    
-    transition: all 0.1s ease-in;
-  }
-
-  .container{
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 10px 20px;
-    font-size: 18px;
-  }
-  .intro{
-    width: 100%;
-    min-height: 500px;
-    display: grid;
-    grid-template-columns: 300px auto;
-    grid-gap:1rem;
-    padding: 1rem;
-
-  }
-  small{
-    color: grey;
-    font-weight: bold;
-  }
-.intro-content{
-  align-self: center;
-}
-
-.my-name{
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color:darkblue;
-}
-
 .image-content img{
   width: 100%;
-  height: 80%;
-  object-fit: cover;
-  margin-top: 1rem;
-  filter: grayscale(100%);
-  transition: transform 0.1s ease;
- 
+  height: 100%;
 }
 
-.image-content img:hover{
-   transform: scale(0.98);
-  filter: grayscale(10%);
- 
-}
 
-@media only screen and (max-width: 576px) {
-  .intro {
-    display: grid;
-    grid-template-columns:1fr;
-    justify-content: center;
-    align-items: center;
-    font-size: 15px;
-  }
-  .image-content img{
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
-  }
-  .image-content{
-    margin: 0 auto;
-
-  }
-  .my-name{
-    font-size: 1.8rem;
-  }
-
-}
-
-.about{
-  padding: 8px 15px ;
-  min-height: 400px;
-  display: grid;
-  justify-items: center; 
+.upper{
+  display: flex;
+  margin-top:6rem;
+  justify-content: center;
   align-items: center;
-  margin-top: 0.5rem;
-  background-color:white;
+}
+.upper-card{
+  border-radius: 6px;
+  margin-top:1rem;
+}
+
+
+.about-paragraph{
+  margin: 0 auto;
+  /* width: 700px; */
+  max-width: 700px;  
+  text-align: left;
 
 }
 
@@ -303,6 +142,7 @@ body{
 }
 .service-icon i{
   border-radius: 10%;
+  margin: 10px;
 }
 
 
@@ -356,6 +196,7 @@ body{
     justify-items: center;
     background-color:#F1F1F1;
     text-align: center;
+    align-items: center;
   
   }
   .all-items{
@@ -393,6 +234,7 @@ body{
     justify-content: center;
   }
   .my-recent-work-wrapper .project-image{
+    /* flex-basis: 350px; */
     max-width: 350px;
     width: 350px;
     height: 350px;
