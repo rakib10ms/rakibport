@@ -14,8 +14,9 @@
   body{
     background-color: #f1f1f1;
   }
+ 
 
-
+   
   .load{
     border: 1px solid #ECF0F1;
     padding: 5px;
@@ -147,7 +148,11 @@
 
 
 @media only screen and (max-width: 768px) {
- 
+
+   body{
+     box-sizing: border-box;
+     overflow-x: hidden;
+   }
   .service-wrapper{
     display: block;
   }
@@ -156,9 +161,6 @@
   }
 
 }
-
-
-
 
 
 
@@ -185,21 +187,24 @@
 
   *{
   
- font-size: 15px;  
+ font-size: 14px;  
  line-height: 1.8;
 }
 }
 
   .my-recent-work{
     min-height: 60vh;
-    width: 100%;
-    justify-items: center;
+    /* width: 100%; */
+    justify-content: center;
     background-color:#F1F1F1;
     text-align: center;
     align-items: center;
+    margin: 0 auto;
   
   }
   .all-items{
+    margin: 0 auto;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -232,11 +237,11 @@
     gap: 0.5rem;
     padding:0.5rem;
     justify-content: center;
+    align-items: center;
   }
   .my-recent-work-wrapper .project-image{
-    /* flex-basis: 350px; */
-    max-width: 350px;
     width: 350px;
+    max-width: 350px;
     height: 350px;
     position: relative;
     margin:4px;
@@ -329,8 +334,8 @@
   @media only screen and (max-width: 576px) {
 
     .image-person{
-      height: 200px;
-      width: 200px;
+      height: 150px;
+      width: 150px;
 
     }
     .person p{
